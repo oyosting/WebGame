@@ -1,4 +1,4 @@
-package com.cisco.j4atool;
+package com.yestops.webgame;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -64,7 +64,7 @@ public class MainActivity extends SlidingFragmentActivity
             Bundle bundle = new Bundle();
             mContent = new WebViewFragment();
             bundle = new Bundle();
-            bundle.putString(WebViewFragment.WEB_ADDRESS, "https://www.yestops.com/xmpp.php");
+            bundle.putString(WebViewFragment.WEB_ADDRESS, "http://play.famobi.com/html5game/9945efe5-4904-43f0-9f75-f9c4c0a77422/A1000-1");
             bundle.putString(WebViewFragment.ACTION_BAR_TITLE, getResources().getString(R.string.menu_sendim));
             mContent.setArguments(bundle);
         }

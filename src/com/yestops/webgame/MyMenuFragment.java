@@ -1,4 +1,4 @@
-package com.cisco.j4atool;
+package com.yestops.webgame;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -77,37 +77,37 @@ public class MyMenuFragment extends ListFragment implements OnClickListener
                 //Send IM
                 newContent = new WebViewFragment();
                 bundle = new Bundle();
-                bundle.putString(WebViewFragment.WEB_ADDRESS, "https://www.yestops.com/xmpp.php");
+                bundle.putString(WebViewFragment.WEB_ADDRESS, "http://play.famobi.com/html5game/9945efe5-4904-43f0-9f75-f9c4c0a77422/A1000-1");
                 bundle.putString(WebViewFragment.ACTION_BAR_TITLE, getResources().getString(R.string.menu_sendim));
                 newContent.setArguments(bundle);
                 //设置SlidingMenu拖拽模式
-                mActivity.getSlidingMenu().setTouchModeAbove(SlidingMenu.TOUCHMODE_FULLSCREEN);
+                mActivity.getSlidingMenu().setTouchModeAbove(SlidingMenu.TOUCHMODE_NONE);
                 break;
             case 1:
                 //CrossLaunch
                 newContent = new WebViewFragment();
                 bundle = new Bundle();
-                bundle.putString(WebViewFragment.WEB_ADDRESS, "https://www.yestops.com/crosslaunch.php");
+                bundle.putString(WebViewFragment.WEB_ADDRESS, "http://play.famobi.com/html5game/eb1897ee-630b-4e1d-b273-31a837eb352a/A1000-1");
                 bundle.putString(WebViewFragment.ACTION_BAR_TITLE, getResources().getString(R.string.menu_crosslaunch));
                 newContent.setArguments(bundle);
                 //设置SlidingMenu拖拽模式
-                mActivity.getSlidingMenu().setTouchModeAbove(SlidingMenu.TOUCHMODE_FULLSCREEN);
+                mActivity.getSlidingMenu().setTouchModeAbove(SlidingMenu.TOUCHMODE_NONE);
                 break;
             case 2:
                 //Make P2P Call
                 newContent = new WebViewFragment();
                 bundle = new Bundle();
-                bundle.putString(WebViewFragment.WEB_ADDRESS, "http://10.140.80.88/p2p.php");
+                bundle.putString(WebViewFragment.WEB_ADDRESS, "http://play.famobi.com/html5game/acc35022-6b92-4580-91e9-65fbd634c4dc/A1000-1");
                 bundle.putString(WebViewFragment.ACTION_BAR_TITLE, getResources().getString(R.string.menu_p2p));
                 newContent.setArguments(bundle);
                 //设置SlidingMenu拖拽模式
-                mActivity.getSlidingMenu().setTouchModeAbove(SlidingMenu.TOUCHMODE_FULLSCREEN);
+                mActivity.getSlidingMenu().setTouchModeAbove(SlidingMenu.TOUCHMODE_NONE);
                 break;
             case 3:
                 //Daily Builds
                 newContent = new WebViewFragment();
                 bundle = new Bundle();
-                bundle.putString(WebViewFragment.WEB_ADDRESS, "http://crdc-android-bld1.cisco.com/builds");
+                bundle.putString(WebViewFragment.WEB_ADDRESS, "http://play.famobi.com/html5game/d8f24956-dc91-4902-9096-a46cb1353b6f/A1000-1");
                 bundle.putString(WebViewFragment.ACTION_BAR_TITLE, getResources().getString(R.string.menu_jabberdownload));
                 newContent.setArguments(bundle);
                 //设置SlidingMenu拖拽模式
@@ -117,17 +117,17 @@ public class MyMenuFragment extends ListFragment implements OnClickListener
                 //IQA System
                 newContent = new WebViewFragment();
                 bundle = new Bundle();
-                bundle.putString(WebViewFragment.WEB_ADDRESS, "http://cmbu.cisco.com/");
+                bundle.putString(WebViewFragment.WEB_ADDRESS, "http://play.famobi.com/html5game/2363495f-0e53-4ee3-a90f-bb03fa687ff1/A1000-1");
                 bundle.putString(WebViewFragment.ACTION_BAR_TITLE, getResources().getString(R.string.menu_iqa));
                 newContent.setArguments(bundle);
                 //设置SlidingMenu拖拽模式
-                mActivity.getSlidingMenu().setTouchModeAbove(SlidingMenu.TOUCHMODE_FULLSCREEN);
+                mActivity.getSlidingMenu().setTouchModeAbove(SlidingMenu.TOUCHMODE_NONE);
                 break;
-            case 5:
+                /*            case 5:
                 //PRT System
                 newContent = new WebViewFragment();
                 bundle = new Bundle();
-                bundle.putString(WebViewFragment.WEB_ADDRESS, "http://cmbu.cisco.com/qd/prt.php");
+                bundle.putString(WebViewFragment.WEB_ADDRESS, "http://play.famobi.com/html5game/5ab38046-93b4-45cf-a0d6-708db40722bb/A1000-1");
                 bundle.putString(WebViewFragment.ACTION_BAR_TITLE, getResources().getString(R.string.menu_prt));
                 newContent.setArguments(bundle);
                 //设置SlidingMenu拖拽模式
@@ -138,11 +138,11 @@ public class MyMenuFragment extends ListFragment implements OnClickListener
                 //设置SlidingMenu拖拽模式
                 newContent = new WebViewFragment();
                 bundle = new Bundle();
-                bundle.putString(WebViewFragment.WEB_ADDRESS, "https://apprtc.appspot.com/");
+                bundle.putString(WebViewFragment.WEB_ADDRESS, "http://www.effectgames.com/effect/games/crystalgalaxy/");
                 bundle.putString(WebViewFragment.ACTION_BAR_TITLE, getResources().getString(R.string.menu_automation));
                 newContent.setArguments(bundle);
                 mActivity.getSlidingMenu().setTouchModeAbove(SlidingMenu.TOUCHMODE_NONE);
-                break;
+                break;*/
         }
         if (newContent != null)
             switchFragment(newContent);
@@ -190,7 +190,7 @@ public class MyMenuFragment extends ListFragment implements OnClickListener
         iqa.setIcon(getResources().getDrawable(R.drawable.menu_iqa));
         iqa.setName(getResources().getString(R.string.menu_iqa));
         items.add(iqa);
-        // No.5
+/*        // No.5
         MyMenuItem prt = new MyMenuItem();
         prt.setIcon(getResources().getDrawable(R.drawable.menu_prt));
         prt.setName(getResources().getString(R.string.menu_prt));
@@ -199,7 +199,7 @@ public class MyMenuFragment extends ListFragment implements OnClickListener
         MyMenuItem worldcup = new MyMenuItem();
         worldcup.setIcon(getResources().getDrawable(R.drawable.menu_worldcup));
         worldcup.setName(getResources().getString(R.string.menu_automation));
-        items.add(worldcup);
+        items.add(worldcup);*/
         return items;
     }
 
@@ -223,13 +223,13 @@ public class MyMenuFragment extends ListFragment implements OnClickListener
             case R.id.button_about:
                 Fragment aboutFragment = new AboutFragment();
                 switchFragment(aboutFragment);
-                Log.d("Cisco", "Switch to AboutFragment");
+                Log.d("YesTops", "Switch to AboutFragment");
                 break;
             case R.id.button_feedback:
                 Intent emailIntent = new Intent(Intent.ACTION_SEND);
                 emailIntent.setType("message/rfc822");
-                emailIntent.putExtra(Intent.EXTRA_EMAIL, new String[]{"jabber-android-tiger@cisco.com"});
-                emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Feedback For J4ATool");
+                emailIntent.putExtra(Intent.EXTRA_EMAIL, new String[]{"Admin@YesTops.com"});
+                emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Feedback For WebGame");
                 emailIntent.putExtra(Intent.EXTRA_TEXT, "Enter your feedback below:\n");
                 emailIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 startActivity(Intent.createChooser(emailIntent, "Send Email"));

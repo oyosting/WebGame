@@ -4,7 +4,7 @@
  * AboutFragment.java
  *
  */
-package com.cisco.j4atool;
+package com.yestops.webgame;
 
 import com.umeng.analytics.MobclickAgent;
 
