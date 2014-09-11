@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/menu_list_background"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/cisco_logo"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divider_color" />
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@color/divider_color"
+        android:dividerHeight="1px"/>
+    
+        <!-- android:paddingLeft="@dimen/list_padding"
+        android:paddingRight="@dimen/list_padding" -->
+        <!-- android:divider="@color/divider_color"
+        android:dividerHeight="1px" -->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divider_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/button_feedback"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_menu_item"
+            android:clickable="true"
+            android:drawableTop="@drawable/button_feedback"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:text="@string/button_feedback"
+            android:textColor="@color/white" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/divider_color" />
+
+        <TextView
+            android:id="@+id/button_about"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_menu_item"
+            android:clickable="true"
+            android:drawableTop="@drawable/button_about"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:text="@string/button_about"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>
